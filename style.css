@@ -2,20 +2,18 @@
 /* ========|| Custom Properties ||======== */
 /* ======================================= */
 :root {
-  --clr-primary: ;
-
-  --clr-secondary: ;
-
-  --clr-accent: ;
+  --clr-primary: hsl(25, 97%, 53%);
 
   --clr-neutral-100: hsl(0, 0%, 100%);
+  --clr-neutral-100: hsl(217, 12%, 63%);
+  --clr-neutral-100: hsl(213, 19%, 18%);
+  --clr-neutral-100: hsl(216, 12%, 8%);
 
   --fw-regular: 400;
   --fw-medium: 500;
   --fw-bold: 700;
 
-  --ff-accent: ;
-  --ff-base: ;
+  --ff-base: "Overpass", sans-serif;
 
   --spacing-50: 4px;
   --spacing-100: 8px;
@@ -60,9 +58,21 @@
   --fs-mobile-display-regular: 3.75rem; /* 80px */
   --fs-mobile-display-large: 4.5rem; /* 72px */
 
-  --fs-body: clamp(var(--fs-mobile-regular), 0.9565rem + 0.2174vw, var(--fs-desktop-regular));
-  --fs-title: clamp(var(--fs-mobile-main-title-small), 1.1087rem + 1.9565vw , var(--fs-desktop-main-large));
-  --fs-sub-title: clamp(var(--fs-mobile-subtitle-regular), 0.8152rem + 2.1739vw, var(--fs-desktop-subtitle-regular));
+  --fs-body: clamp(
+    var(--fs-mobile-regular),
+    0.9565rem + 0.2174vw,
+    var(--fs-desktop-regular)
+  );
+  --fs-title: clamp(
+    var(--fs-mobile-main-title-small),
+    1.1087rem + 1.9565vw,
+    var(--fs-desktop-main-large)
+  );
+  --fs-sub-title: clamp(
+    var(--fs-mobile-subtitle-regular),
+    0.8152rem + 2.1739vw,
+    var(--fs-desktop-subtitle-regular)
+  );
   --fs-smallest: ;
   --fs-button: ;
 }
@@ -134,6 +144,7 @@ h6 {
 /* ======================================= */
 body {
   font-family: var(--ff-base);
+  font-size: 0.9375rem;
 }
 
 /* ======================================= */
